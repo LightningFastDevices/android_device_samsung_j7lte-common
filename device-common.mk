@@ -25,6 +25,9 @@ $(call inherit-product-if-exists, vendor/samsung/j7lte-common/j7lte-common-vendo
 
 LOCAL_PATH := device/samsung/j7lte-common
 
+# SoC Variant
+TARGET_BOARD_PLATFORM_VARIANT := msm8929
+
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
