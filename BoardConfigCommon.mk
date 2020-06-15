@@ -18,10 +18,6 @@ LOCAL_PATH := device/samsung/j7lte-common
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
-# Screen density
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
-
 # Include
 TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 

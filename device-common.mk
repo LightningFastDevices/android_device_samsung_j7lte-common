@@ -87,6 +87,10 @@ PRODUCT_PACKAGES += \
     librilutils \
     rild
 
+# Screen density
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # Proprieties
 -include $(LOCAL_PATH)/system_prop.mk
 
