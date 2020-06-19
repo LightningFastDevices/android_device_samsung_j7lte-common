@@ -23,15 +23,15 @@ $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
 # Inherit from vendor
 $(call inherit-product-if-exists, vendor/samsung/j7lte-common/j7lte-common-vendor.mk)
 
-LOCAL_PATH := device/samsung/j7lte-common
+DEVICE_PATH := device/samsung/j7lte-common
 
 # SoC Variant
 TARGET_BOARD_PLATFORM_VARIANT := msm8929
 
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(DEVICE_PATH)/overlay \
+    $(DEVICE_PATH)/overlay-lineage
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -46,8 +46,8 @@ $(call inherit-product, device/samsung/msm8916-common/nfc/pn547/product.mk)
 
 # Media configurations
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml
+    $(DEVICE_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
+    $(DEVICE_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -75,7 +75,7 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Proprieties
--include $(LOCAL_PATH)/system_prop.mk
+-include $(DEVICE_PATH)/system_prop.mk
 
 # Dalvik/ART
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
