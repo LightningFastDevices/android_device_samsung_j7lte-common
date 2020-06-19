@@ -13,6 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Inherit from common msm8916
+include device/samsung/msm8916-common/BoardConfigCommon.mk
+
 LOCAL_PATH := device/samsung/j7lte-common
 
 # Bluetooth
@@ -37,6 +40,3 @@ BOARD_PROVIDES_LIBRIL := true
 
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI := true
-
-# Inherit from common msm8916
-include device/samsung/msm8916-common/BoardConfigCommon.mk
