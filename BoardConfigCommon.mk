@@ -22,7 +22,7 @@ DEVICE_PATH := device/samsung/j7lte-common
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # HIDL
-DEVICE_MANIFEST_FILE += device/samsung/gprimelte-common/manifest.xml
+DEVICE_MANIFEST_FILE += device/samsung/j7lte-common/manifest.xml
 # Include
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
